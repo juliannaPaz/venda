@@ -1,7 +1,7 @@
 # venda
 Projeto modelo, contendo exemplo de classe abstrata e implementação de API REST
 
-## Payloa de exemplo para cadastro de produto
+## Payload de exemplo para cadastro de produto
 
 path POST: localhost:8080/maquiagem
 ```json
