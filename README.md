@@ -21,3 +21,5 @@ path POST: localhost:8080/venda
     "quantidade": 3
 }
 ```
+### Acesso ao banco H2
+localhost:8080/h2-console
