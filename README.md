@@ -3,7 +3,7 @@ Projeto modelo, contendo exemplo de classe abstrata e implementação de API RES
 
 ## Payload de exemplo para cadastro de produto
 
-path POST: localhost:8080/maquiagem
+path POST: http://localhost:8080/maquiagem
 ```json
 {
     "descricao" : "Rimel a prova de água",
@@ -13,7 +13,7 @@ path POST: localhost:8080/maquiagem
 }
 ```
 
-path POST: localhost:8080/venda
+path POST: http://localhost:8080/venda
 
 ```json
 {
@@ -22,4 +22,4 @@ path POST: localhost:8080/venda
 }
 ```
 ### Acesso ao banco H2
-localhost:8080/h2-console
+http://localhost:8080/h2-console
