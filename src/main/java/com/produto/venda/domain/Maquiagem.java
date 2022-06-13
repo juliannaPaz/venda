@@ -17,8 +17,8 @@ public class Maquiagem extends Produto {
     }
 
     @Override
-    public void retiraDoEstoque(final int quantidade) {
-       setQuantidadeEmEstoque(getQuantidadeEmEstoque() - quantidade);
+    public String imprimeReciboVenda() {
+        return "Ocorreu uma venda do item " + this.tipoMaquiagem + " pelo valor unitário: R$" ;
     }
 
     public Maquiagem(final String id, final String descricao, final BigDecimal preco, final int quantidadeEmEstoque, final TipoMaquiagem tipoMaquiagem) {

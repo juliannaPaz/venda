@@ -22,9 +22,9 @@ public class VendaController {
     }
 
     @PostMapping
-    public ResponseEntity<Produto> salvaMaquiagem(@RequestBody VendaDto vendaDto){
+    public ResponseEntity<String> salvaMaquiagem(@RequestBody VendaDto vendaDto){
         var produto = service.realizaVenda(vendaDto);
-        return ResponseEntity.ok(produto);
+        return ResponseEntity.ok(produto.imprimeReciboVenda());
     }
 
 }

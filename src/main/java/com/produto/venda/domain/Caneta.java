@@ -12,8 +12,8 @@ public class Caneta extends Produto{
     }
 
     @Override
-    public void retiraDoEstoque(final int quantidade) {
-        setQuantidadeEmEstoque(getQuantidadeEmEstoque() - quantidade);
+    public String imprimeReciboVenda() {
+        return "Ocorreu uma venda do item caneta de cor " + this.cor + "pelo valor unitário: R$";
     }
 
     public enum Cor{

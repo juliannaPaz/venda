@@ -28,7 +28,11 @@ public abstract class Produto {
     protected Produto() {
     }
 
-    public abstract void retiraDoEstoque(final int quantidade);
+    public void retiraDoEstoque(final int quantidade) {
+        setQuantidadeEmEstoque(getQuantidadeEmEstoque() - quantidade);
+    }
+
+    public abstract String imprimeReciboVenda();
 
     public String getId() {
         return id;
